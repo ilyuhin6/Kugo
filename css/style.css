@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --TextGray: #5d6c7b;
+  --TextBold: #282739;
+  --TextLight: #ffffff;
+  --ColorMain: #6f73ee;
+  --CardHit: #ee685f;
+  --CardNew: #75d14a;
+}
+
+body {
+  font-family: "Jost", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-size: 2.1875rem;
+  font-weight: 600;
+}
