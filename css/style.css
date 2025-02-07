@@ -26,4 +26,155 @@ h1,
 h2 {
   font-size: 2.1875rem;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 71.875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: 0 auto;
+}
+
+/* START Header */
+/* Header-top */
+.top-header {
+  border-bottom: 1px solid #ecf3ff;
+  padding: 11px 0;
+}
+
+.top-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 1.875rem;
+}
+
+.top-header-link {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--TextGray);
+}
+
+.top-header-social {
+  display: flex;
+  flex-grow: 1;
+  gap: 0.5313rem;
+}
+
+.header-phone-link {
+  font-size: 0.75rem;
+  color: var(--TextBold);
+  font-weight: 500;
+}
+
+/* Footer-Headrer */
+
+.footer-header {
+  margin-top: 1.875rem;
+}
+
+.footer-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--TextBold);
+  text-transform: uppercase;
+}
+.catalog {
+  border: none;
+  border-radius: 6px;
+  padding: 9px 18px 9px 41px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--TextLight);
+  background-color: var(--ColorMain);
+  margin-right: -20px;
+  position: relative;
+}
+.catalog:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background-image: url("../img/icon/burger.svg");
+  background-size: cover;
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  z-index: 2;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-grow: 1;
+  width: 100%; /* Задайте ширину 100% для родителя */
+  max-width: 603px; /* Ограничьте максимальную ширину */
+  margin-right: 30px;
+}
+
+.search {
+  display: block;
+  border: 2px solid var(--ColorMain);
+  border-radius: 5px;
+  max-width: 100%; /* Убедитесь, что max-width работает правильно */
+  width: 100%; /* Задайте ширину 100%, чтобы заполнять родителя */
+  font-size: 14px;
+  color: var(--TextGray);
+  padding: 0.635rem 1.25rem;
+}
+
+.search-btn {
+  background-color: var(--ColorMain);
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 12px;
+  margin-left: -3px;
+  cursor: pointer;
+}
+
+.favorites {
+  display: flex;
+  gap: 25px;
+}
+
+.user-bascet {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-bascet {
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--TextGray);
+  padding: 0;
 }
