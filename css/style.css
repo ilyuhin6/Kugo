@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 :root {
@@ -185,4 +185,119 @@ address {
   cursor: pointer;
 }
 
-/* START Section-legend */
+/* START Section-HERO */
+.section-hero {
+  margin-top: 2.5rem;
+}
+
+.hero-banner {
+  display: block;
+  max-width: 86.25rem;
+  height: 445px;
+  margin: 0 auto;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.625rem;
+  position: relative;
+}
+
+.hero-banner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 0.625rem;
+  background: linear-gradient(
+    18.78deg,
+    rgb(111, 115, 238) 17.368%,
+    rgba(111, 115, 238, 0) 67.018%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 40rem;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  max-height: 27.8125rem;
+  position: relative;
+  z-index: 2;
+}
+
+.address-schedule {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.hours {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  opacity: 0.7;
+}
+
+.hero-title {
+  margin-top: 1.1875rem;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 51px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.hero-descr {
+  margin-top: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 1.75rem;
+}
+
+.hero-test-drive-wrapper {
+  display: flex;
+  gap: 2.1875rem;
+  margin-bottom: 2.375rem;
+}
+
+.hero-test-drive {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  max-width: 12.8125rem;
+}
+
+.hero-test-drive-img {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255, 0.2);
+}
+
+.hero-test-drive-descr {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.btn-hero {
+  display: inline-block;
+  width: 159px;
+  height: 53px;
+  border: none;
+  border-radius: 5px;
+}
