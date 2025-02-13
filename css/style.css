@@ -54,6 +54,11 @@ address {
   margin: 0 auto;
 }
 
+.container-content {
+  max-width: 86.25rem;
+  margin: 0 auto;
+}
+
 /* START Header */
 /* Header-top */
 .top-header {
@@ -70,7 +75,7 @@ address {
 .top-header-list {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   margin-right: 1.875rem;
 }
 
@@ -114,25 +119,25 @@ address {
 .catalog {
   border: none;
   border-radius: 6px;
-  padding: 9px 18px 9px 41px;
+  padding: 0.5625rem 1.125rem 0.5625rem 2.5625rem;
   font-size: 1rem;
   font-weight: 500;
   color: var(--TextLight);
   background-color: var(--ColorMain);
-  margin-right: -20px;
+  margin-right: -1.25rem;
   position: relative;
   cursor: pointer;
 }
 .catalog:before {
   content: "";
   display: inline-block;
-  width: 14px;
-  height: 13px;
+  width: 0.875rem;
+  height: 0.8125rem;
   background-image: url("../img/icon/burger.svg");
   background-size: cover;
   position: absolute;
-  top: 11px;
-  left: 13px;
+  top: 0.6875rem;
+  left: 0.8125rem;
   z-index: 2;
 }
 
@@ -140,8 +145,8 @@ address {
   display: flex;
   flex-grow: 1;
   width: 100%; /* Задайте ширину 100% для родителя */
-  max-width: 603px; /* Ограничьте максимальную ширину */
-  margin-right: 30px;
+  max-width: 37.6875rem; /* Ограничьте максимальную ширину */
+  margin-right: 1.875rem;
 }
 
 .search {
@@ -150,7 +155,7 @@ address {
   border-radius: 5px;
   max-width: 100%; /* Убедитесь, что max-width работает правильно */
   width: 100%; /* Задайте ширину 100%, чтобы заполнять родителя */
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--TextGray);
   padding: 0.635rem 1.25rem;
 }
@@ -178,7 +183,7 @@ address {
 .btn-bascet {
   border: none;
   background: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--TextGray);
   padding: 0;
@@ -193,7 +198,6 @@ address {
 .hero-banner {
   display: block;
   max-width: 86.25rem;
-  height: 445px;
   margin: 0 auto;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
@@ -207,7 +211,6 @@ address {
   display: block;
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   bottom: 0;
   right: 0;
@@ -223,9 +226,9 @@ address {
 
 .hero-content {
   max-width: 40rem;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  max-height: 27.8125rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  max-height: 32rem;
   position: relative;
   z-index: 2;
 }
@@ -234,31 +237,31 @@ address {
   color: rgb(255, 255, 255);
   font-size: 12px;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 1.0625rem;
 }
 
 .hours {
   color: rgb(255, 255, 255);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 1.0625rem;
   opacity: 0.7;
 }
 
 .hero-title {
   margin-top: 1.1875rem;
   color: rgb(255, 255, 255);
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 600;
-  line-height: 51px;
+  line-height: 3.1875rem;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
 
 .hero-descr {
-  margin-top: 7px;
+  margin-top: 0.4375rem;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0%;
@@ -268,7 +271,7 @@ address {
 .hero-test-drive-wrapper {
   display: flex;
   gap: 2.1875rem;
-  margin-bottom: 2.375rem;
+  margin-bottom: 4.375rem;
 }
 
 .hero-test-drive {
@@ -280,24 +283,115 @@ address {
 
 .hero-test-drive-img {
   display: inline-block;
-  padding: 12px;
+  padding: 0.75rem;
   border-radius: 5px;
   background: rgb(255, 255, 255, 0.2);
 }
 
 .hero-test-drive-descr {
   color: rgb(255, 255, 255);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.125rem;
   letter-spacing: 0%;
   text-align: left;
 }
 
 .btn-hero {
   display: inline-block;
-  width: 159px;
-  height: 53px;
+  width: 9.9375rem;
+  height: 3.3125rem;
   border: none;
   border-radius: 5px;
+}
+
+/* START Section-test-drive */
+.section-test-drive {
+  margin-top: 6.25rem;
+}
+
+.test-drive-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.test-drive-bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 135px;
+}
+
+.test-drive-image-post {
+  max-width: 86.25rem;
+  background-image: url("../img/E-Scooters.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.test-drive-content {
+  margin-left: 8.125rem;
+}
+
+.test-drive-bottom-content {
+  margin-right: 8.125rem;
+}
+
+.title-test-drive {
+  margin-bottom: 1.875rem;
+  color: rgb(40, 39, 57);
+  font-size: 2.1875rem;
+  font-weight: 600;
+  line-height: 3.1875rem;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.title-list {
+  color: rgb(40, 39, 57);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.8125rem;
+  letter-spacing: 0%;
+  margin-bottom: 18px;
+}
+
+.test-drive-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 29px;
+}
+
+.test-drive-item {
+  color: rgb(40, 39, 57);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  position: relative;
+}
+.test-drive-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 1px;
+  right: 30px;
+  background-image: url("../img/icon/CheckCircle.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.image-post-test-drive {
+  max-width: 32.1875rem;
+}
+.image-post-test-drive-photo {
+  display: inline-block;
+  width: 32.1875rem;
+  border-radius: 0.625rem;
 }
